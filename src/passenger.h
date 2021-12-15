@@ -15,6 +15,7 @@ private:
     bool checkinBag;
     //Ticket ticket;
 public:
+    Passenger();
     Passenger(string name, bool checkinBag);
 
     string getName() const;
@@ -22,6 +23,7 @@ public:
 
     void setName(string name);
     void setCheckinBag(bool CheckinBag);
+    void displayPassenger();
 
     friend class clientMenu;
 };

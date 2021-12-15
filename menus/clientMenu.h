@@ -10,15 +10,14 @@
 
 class clientMenu{
 private:
-    Passenger* client;
+    Passenger client;
 
 public:
     clientMenu();
-    //~clientMenu();
 
     void runClientMenu();
 
-    //friend class Passenger;
+    friend class Passenger;
 
 };
 

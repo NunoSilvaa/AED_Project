@@ -6,6 +6,7 @@
 #define AIRPORT_TICKET_H
 
 #include "passenger.h"
+#include <list>
 
 using namespace std;
 
@@ -15,8 +16,10 @@ private:
     int num;
     int seat;
     Passenger* owner;
+    list<Ticket> tickets;
 public:
-    Ticket(int num, int price, int seat);
+    Ticket();
+    Ticket(int num, int price, int seat, Passenger* owner);
 
     int getNum() const;
     int getPrice() const;
@@ -27,6 +30,14 @@ public:
     void setPrice(int price);
     void setSeat(int seat);
     void setOwner(Passenger* owner);
+
+    void addTicket(list<Ticket> tickets, Ticket ticket);
+    void removeTicket(list<Ticket> tickets, Ticket ticket);
+    Ticket findTicket(list<Ticket> tickets, Ticket ticket);
+
+    //int defineTicketNum()
+
+    bool operator==(const Ticket& t);
 };
 
 #endif //AIRPORT_TICKET_H

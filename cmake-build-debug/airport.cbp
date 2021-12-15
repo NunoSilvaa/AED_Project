@@ -107,7 +107,10 @@
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/passenger.h">
 			<Option target="airport"/>
 		</Unit>
-		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/planes.h">
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/plane.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/plane.h">
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.cpp">

@@ -248,6 +248,30 @@ src/passenger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/passenger.cpp.s
 .PHONY : src/passenger.cpp.s
 
+src/plane.obj: src/plane.cpp.obj
+.PHONY : src/plane.obj
+
+# target to build an object file
+src/plane.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/plane.cpp.obj
+.PHONY : src/plane.cpp.obj
+
+src/plane.i: src/plane.cpp.i
+.PHONY : src/plane.i
+
+# target to preprocess a source file
+src/plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/plane.cpp.i
+.PHONY : src/plane.cpp.i
+
+src/plane.s: src/plane.cpp.s
+.PHONY : src/plane.s
+
+# target to generate assembly for a file
+src/plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/plane.cpp.s
+.PHONY : src/plane.cpp.s
+
 src/ticket.obj: src/ticket.cpp.obj
 .PHONY : src/ticket.obj
 
@@ -296,6 +320,9 @@ help:
 	@echo ... src/passenger.obj
 	@echo ... src/passenger.i
 	@echo ... src/passenger.s
+	@echo ... src/plane.obj
+	@echo ... src/plane.i
+	@echo ... src/plane.s
 	@echo ... src/ticket.obj
 	@echo ... src/ticket.i
 	@echo ... src/ticket.s

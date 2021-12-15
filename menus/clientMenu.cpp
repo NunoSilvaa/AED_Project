@@ -9,11 +9,23 @@
 clientMenu::clientMenu() {};
 
 void clientMenu::runClientMenu() {
+    string name;
     char c;
     while (true){
-        cout<< "nnn";
-        client->setName("Nuno");
-        cout << client->getName();
+        //system("cls");
+        cout << "Tell us your name: ";
+        cin >> name;
+        client.setName(name);
+        //cout << client.getName();
+        cout << "Hi " << client.getName() << "\n";
+        cout << "\nSelect one option\n";
+        cout << "\n   [1] See all fights available"
+             << "\n   [2] Book a flight"
+             << "\n   [3] ";
+        switch (c) {
+            case'1'
+
+        }
     }
 }
 

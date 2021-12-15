@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/mainMenu.cpp" "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir/menus/mainMenu.cpp.obj"
   "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/luggage.cpp" "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir/src/luggage.cpp.obj"
   "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/passenger.cpp" "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir/src/passenger.cpp.obj"
+  "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/plane.cpp" "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir/src/plane.cpp.obj"
   "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.cpp" "C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir/src/ticket.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

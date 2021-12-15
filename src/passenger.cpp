@@ -6,6 +6,8 @@
 
 using namespace std;
 
+Passenger::Passenger() {}
+
 Passenger::Passenger(string name, bool checkinBag) {
     this->name = name;
     this->checkinBag = checkinBag;
@@ -25,4 +27,8 @@ void Passenger::setName(std::string name) {
 
 void Passenger::setCheckinBag(bool CheckinBag) {
     this->checkinBag = checkinBag;
+}
+
+void Passenger::displayPassenger() {
+
 }

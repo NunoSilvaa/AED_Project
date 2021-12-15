@@ -20,5 +20,6 @@ CMakeFiles/airport.dir/src/passenger.cpp.obj: \
  ../src/passenger.cpp \
  ../src/passenger.h
 CMakeFiles/airport.dir/src/ticket.cpp.obj: \
+ ../src/passenger.h \
  ../src/ticket.cpp \
  ../src/ticket.h
