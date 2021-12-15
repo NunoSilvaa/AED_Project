@@ -5,9 +5,15 @@
 #ifndef AIRPORT_LUGGAGE_H
 #define AIRPORT_LUGGAGE_H
 
+using namespace std;
+
+#include <list>
+#include <stack>
+
 class Luggage {
 private:
     int weight;
+    list<stack<Luggage>> luggageCar;
 
 public:
     Luggage(int weight);

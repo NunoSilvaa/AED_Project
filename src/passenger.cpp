@@ -6,14 +6,23 @@
 
 using namespace std;
 
-Passenger::Passenger(string name) {
+Passenger::Passenger(string name, bool checkinBag) {
     this->name = name;
+    this->checkinBag = checkinBag;
 }
 
 string Passenger::getName() const {
     return name;
 }
 
+bool Passenger::getCheckinBag() const{
+    return checkinBag;
+}
+
 void Passenger::setName(std::string name) {
     this->name = name;
+}
+
+void Passenger::setCheckinBag(bool CheckinBag) {
+    this->checkinBag = checkinBag;
 }

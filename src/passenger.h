@@ -12,13 +12,18 @@ using namespace std;
 class Passenger {
 private:
     string name;
+    bool checkinBag;
     //Ticket ticket;
 public:
-    Passenger(string name);
+    Passenger(string name, bool checkinBag);
 
     string getName() const;
+    bool getCheckinBag() const;
 
     void setName(string name);
+    void setCheckinBag(bool CheckinBag);
+
+    friend class clientMenu;
 };
 
 #endif //AIRPORT_PASSENGER_H

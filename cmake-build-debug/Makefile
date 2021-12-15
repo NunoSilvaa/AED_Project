@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nmls1\Desktop\airport
+CMAKE_SOURCE_DIR = C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nmls1\Desktop\airport\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nmls1\Desktop\airport\cmake-build-debug\CMakeFiles C:\Users\nmls1\Desktop\airport\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nmls1\Desktop\airport\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+menus/clientMenu.obj: menus/clientMenu.cpp.obj
+.PHONY : menus/clientMenu.obj
+
+# target to build an object file
+menus/clientMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/clientMenu.cpp.obj
+.PHONY : menus/clientMenu.cpp.obj
+
+menus/clientMenu.i: menus/clientMenu.cpp.i
+.PHONY : menus/clientMenu.i
+
+# target to preprocess a source file
+menus/clientMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/clientMenu.cpp.i
+.PHONY : menus/clientMenu.cpp.i
+
+menus/clientMenu.s: menus/clientMenu.cpp.s
+.PHONY : menus/clientMenu.s
+
+# target to generate assembly for a file
+menus/clientMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/clientMenu.cpp.s
+.PHONY : menus/clientMenu.cpp.s
+
+menus/mainMenu.obj: menus/mainMenu.cpp.obj
+.PHONY : menus/mainMenu.obj
+
+# target to build an object file
+menus/mainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/mainMenu.cpp.obj
+.PHONY : menus/mainMenu.cpp.obj
+
+menus/mainMenu.i: menus/mainMenu.cpp.i
+.PHONY : menus/mainMenu.i
+
+# target to preprocess a source file
+menus/mainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/mainMenu.cpp.i
+.PHONY : menus/mainMenu.cpp.i
+
+menus/mainMenu.s: menus/mainMenu.cpp.s
+.PHONY : menus/mainMenu.s
+
+# target to generate assembly for a file
+menus/mainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/mainMenu.cpp.s
+.PHONY : menus/mainMenu.cpp.s
 
 src/luggage.obj: src/luggage.cpp.obj
 .PHONY : src/luggage.obj
@@ -236,6 +284,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... menus/clientMenu.obj
+	@echo ... menus/clientMenu.i
+	@echo ... menus/clientMenu.s
+	@echo ... menus/mainMenu.obj
+	@echo ... menus/mainMenu.i
+	@echo ... menus/mainMenu.s
 	@echo ... src/luggage.obj
 	@echo ... src/luggage.i
 	@echo ... src/luggage.s
