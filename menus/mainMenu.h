@@ -5,6 +5,7 @@
 #ifndef AIRPORT_MAINMENU_H
 #define AIRPORT_MAINMENU_H
 
+#include"../utilities/os.h"
 
 class mainMenu {
 public:

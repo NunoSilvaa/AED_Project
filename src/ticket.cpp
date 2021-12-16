@@ -4,6 +4,7 @@
 
 #include "ticket.h"
 #include <algorithm>
+#include <ctime>
 
 using namespace std;
 
@@ -59,6 +60,16 @@ Ticket Ticket::findTicket(list<Ticket> tickets, Ticket ticket) {
     list<Ticket>::iterator it;
     it = std::find(tickets.begin(), tickets.end(), ticket);
     return *it;
+}
+
+int Ticket::generateTicketNum() {
+    int num;
+
+    srand(time(NULL));
+
+    num = rand() % 999999 + 000000;
+
+    return num;
 }
 
 bool Ticket::operator==(const Ticket &t) {

@@ -35,7 +35,7 @@ public:
     void removeTicket(list<Ticket> tickets, Ticket ticket);
     Ticket findTicket(list<Ticket> tickets, Ticket ticket);
 
-    //int defineTicketNum()
+    int generateTicketNum();
 
     bool operator==(const Ticket& t);
 };

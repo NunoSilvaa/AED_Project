@@ -17,7 +17,7 @@ public:
 
     void runClientMenu();
 
-    friend class Passenger;
+    //friend class Passenger;
 
 };
 

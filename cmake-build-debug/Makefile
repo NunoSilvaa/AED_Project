@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menus/bookingMenu.obj: menus/bookingMenu.cpp.obj
+.PHONY : menus/bookingMenu.obj
+
+# target to build an object file
+menus/bookingMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj
+.PHONY : menus/bookingMenu.cpp.obj
+
+menus/bookingMenu.i: menus/bookingMenu.cpp.i
+.PHONY : menus/bookingMenu.i
+
+# target to preprocess a source file
+menus/bookingMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bookingMenu.cpp.i
+.PHONY : menus/bookingMenu.cpp.i
+
+menus/bookingMenu.s: menus/bookingMenu.cpp.s
+.PHONY : menus/bookingMenu.s
+
+# target to generate assembly for a file
+menus/bookingMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bookingMenu.cpp.s
+.PHONY : menus/bookingMenu.cpp.s
+
 menus/clientMenu.obj: menus/clientMenu.cpp.obj
 .PHONY : menus/clientMenu.obj
 
@@ -176,6 +200,30 @@ menus/clientMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/clientMenu.cpp.s
 .PHONY : menus/clientMenu.cpp.s
 
+menus/flightsMenu.obj: menus/flightsMenu.cpp.obj
+.PHONY : menus/flightsMenu.obj
+
+# target to build an object file
+menus/flightsMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj
+.PHONY : menus/flightsMenu.cpp.obj
+
+menus/flightsMenu.i: menus/flightsMenu.cpp.i
+.PHONY : menus/flightsMenu.i
+
+# target to preprocess a source file
+menus/flightsMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/flightsMenu.cpp.i
+.PHONY : menus/flightsMenu.cpp.i
+
+menus/flightsMenu.s: menus/flightsMenu.cpp.s
+.PHONY : menus/flightsMenu.s
+
+# target to generate assembly for a file
+menus/flightsMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/flightsMenu.cpp.s
+.PHONY : menus/flightsMenu.cpp.s
+
 menus/mainMenu.obj: menus/mainMenu.cpp.obj
 .PHONY : menus/mainMenu.obj
 
@@ -199,6 +247,30 @@ menus/mainMenu.s: menus/mainMenu.cpp.s
 menus/mainMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/mainMenu.cpp.s
 .PHONY : menus/mainMenu.cpp.s
+
+src/flight.obj: src/flight.cpp.obj
+.PHONY : src/flight.obj
+
+# target to build an object file
+src/flight.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/flight.cpp.obj
+.PHONY : src/flight.cpp.obj
+
+src/flight.i: src/flight.cpp.i
+.PHONY : src/flight.i
+
+# target to preprocess a source file
+src/flight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/flight.cpp.i
+.PHONY : src/flight.cpp.i
+
+src/flight.s: src/flight.cpp.s
+.PHONY : src/flight.s
+
+# target to generate assembly for a file
+src/flight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/flight.cpp.s
+.PHONY : src/flight.cpp.s
 
 src/luggage.obj: src/luggage.cpp.obj
 .PHONY : src/luggage.obj
@@ -296,6 +368,54 @@ src/ticket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/src/ticket.cpp.s
 .PHONY : src/ticket.cpp.s
 
+utilities/date.obj: utilities/date.cpp.obj
+.PHONY : utilities/date.obj
+
+# target to build an object file
+utilities/date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/date.cpp.obj
+.PHONY : utilities/date.cpp.obj
+
+utilities/date.i: utilities/date.cpp.i
+.PHONY : utilities/date.i
+
+# target to preprocess a source file
+utilities/date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/date.cpp.i
+.PHONY : utilities/date.cpp.i
+
+utilities/date.s: utilities/date.cpp.s
+.PHONY : utilities/date.s
+
+# target to generate assembly for a file
+utilities/date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/date.cpp.s
+.PHONY : utilities/date.cpp.s
+
+utilities/time.obj: utilities/time.cpp.obj
+.PHONY : utilities/time.obj
+
+# target to build an object file
+utilities/time.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/time.cpp.obj
+.PHONY : utilities/time.cpp.obj
+
+utilities/time.i: utilities/time.cpp.i
+.PHONY : utilities/time.i
+
+# target to preprocess a source file
+utilities/time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/time.cpp.i
+.PHONY : utilities/time.cpp.i
+
+utilities/time.s: utilities/time.cpp.s
+.PHONY : utilities/time.s
+
+# target to generate assembly for a file
+utilities/time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/utilities/time.cpp.s
+.PHONY : utilities/time.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -308,12 +428,21 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... menus/bookingMenu.obj
+	@echo ... menus/bookingMenu.i
+	@echo ... menus/bookingMenu.s
 	@echo ... menus/clientMenu.obj
 	@echo ... menus/clientMenu.i
 	@echo ... menus/clientMenu.s
+	@echo ... menus/flightsMenu.obj
+	@echo ... menus/flightsMenu.i
+	@echo ... menus/flightsMenu.s
 	@echo ... menus/mainMenu.obj
 	@echo ... menus/mainMenu.i
 	@echo ... menus/mainMenu.s
+	@echo ... src/flight.obj
+	@echo ... src/flight.i
+	@echo ... src/flight.s
 	@echo ... src/luggage.obj
 	@echo ... src/luggage.i
 	@echo ... src/luggage.s
@@ -326,6 +455,12 @@ help:
 	@echo ... src/ticket.obj
 	@echo ... src/ticket.i
 	@echo ... src/ticket.s
+	@echo ... utilities/date.obj
+	@echo ... utilities/date.i
+	@echo ... utilities/date.s
+	@echo ... utilities/time.obj
+	@echo ... utilities/time.i
+	@echo ... utilities/time.s
 .PHONY : help
 
 

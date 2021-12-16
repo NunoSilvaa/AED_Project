@@ -156,6 +156,71 @@ CMakeFiles/airport.dir/src/plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/src/plane.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\src\plane.cpp -o CMakeFiles\airport.dir\src\plane.cpp.s
 
+CMakeFiles/airport.dir/src/flight.cpp.obj: CMakeFiles/airport.dir/flags.make
+CMakeFiles/airport.dir/src/flight.cpp.obj: ../src/flight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/airport.dir/src/flight.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport.dir\src\flight.cpp.obj -c C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\src\flight.cpp
+
+CMakeFiles/airport.dir/src/flight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport.dir/src/flight.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\src\flight.cpp > CMakeFiles\airport.dir\src\flight.cpp.i
+
+CMakeFiles/airport.dir/src/flight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/src/flight.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\src\flight.cpp -o CMakeFiles\airport.dir\src\flight.cpp.s
+
+CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj: CMakeFiles/airport.dir/flags.make
+CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj: ../menus/flightsMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport.dir\menus\flightsMenu.cpp.obj -c C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\flightsMenu.cpp
+
+CMakeFiles/airport.dir/menus/flightsMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport.dir/menus/flightsMenu.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\flightsMenu.cpp > CMakeFiles\airport.dir\menus\flightsMenu.cpp.i
+
+CMakeFiles/airport.dir/menus/flightsMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/menus/flightsMenu.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\flightsMenu.cpp -o CMakeFiles\airport.dir\menus\flightsMenu.cpp.s
+
+CMakeFiles/airport.dir/utilities/time.cpp.obj: CMakeFiles/airport.dir/flags.make
+CMakeFiles/airport.dir/utilities/time.cpp.obj: ../utilities/time.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/airport.dir/utilities/time.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport.dir\utilities\time.cpp.obj -c C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\time.cpp
+
+CMakeFiles/airport.dir/utilities/time.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport.dir/utilities/time.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\time.cpp > CMakeFiles\airport.dir\utilities\time.cpp.i
+
+CMakeFiles/airport.dir/utilities/time.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/utilities/time.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\time.cpp -o CMakeFiles\airport.dir\utilities\time.cpp.s
+
+CMakeFiles/airport.dir/utilities/date.cpp.obj: CMakeFiles/airport.dir/flags.make
+CMakeFiles/airport.dir/utilities/date.cpp.obj: ../utilities/date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/airport.dir/utilities/date.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport.dir\utilities\date.cpp.obj -c C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\date.cpp
+
+CMakeFiles/airport.dir/utilities/date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport.dir/utilities/date.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\date.cpp > CMakeFiles\airport.dir\utilities\date.cpp.i
+
+CMakeFiles/airport.dir/utilities/date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/utilities/date.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\utilities\date.cpp -o CMakeFiles\airport.dir\utilities\date.cpp.s
+
+CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj: CMakeFiles/airport.dir/flags.make
+CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj: ../menus/bookingMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\airport.dir\menus\bookingMenu.cpp.obj -c C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\bookingMenu.cpp
+
+CMakeFiles/airport.dir/menus/bookingMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airport.dir/menus/bookingMenu.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\bookingMenu.cpp > CMakeFiles\airport.dir\menus\bookingMenu.cpp.i
+
+CMakeFiles/airport.dir/menus/bookingMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airport.dir/menus/bookingMenu.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\menus\bookingMenu.cpp -o CMakeFiles\airport.dir\menus\bookingMenu.cpp.s
+
 # Object files for target airport
 airport_OBJECTS = \
 "CMakeFiles/airport.dir/main.cpp.obj" \
@@ -164,7 +229,12 @@ airport_OBJECTS = \
 "CMakeFiles/airport.dir/src/ticket.cpp.obj" \
 "CMakeFiles/airport.dir/menus/mainMenu.cpp.obj" \
 "CMakeFiles/airport.dir/menus/clientMenu.cpp.obj" \
-"CMakeFiles/airport.dir/src/plane.cpp.obj"
+"CMakeFiles/airport.dir/src/plane.cpp.obj" \
+"CMakeFiles/airport.dir/src/flight.cpp.obj" \
+"CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj" \
+"CMakeFiles/airport.dir/utilities/time.cpp.obj" \
+"CMakeFiles/airport.dir/utilities/date.cpp.obj" \
+"CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj"
 
 # External object files for target airport
 airport_EXTERNAL_OBJECTS =
@@ -176,11 +246,16 @@ airport.exe: CMakeFiles/airport.dir/src/ticket.cpp.obj
 airport.exe: CMakeFiles/airport.dir/menus/mainMenu.cpp.obj
 airport.exe: CMakeFiles/airport.dir/menus/clientMenu.cpp.obj
 airport.exe: CMakeFiles/airport.dir/src/plane.cpp.obj
+airport.exe: CMakeFiles/airport.dir/src/flight.cpp.obj
+airport.exe: CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj
+airport.exe: CMakeFiles/airport.dir/utilities/time.cpp.obj
+airport.exe: CMakeFiles/airport.dir/utilities/date.cpp.obj
+airport.exe: CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj
 airport.exe: CMakeFiles/airport.dir/build.make
 airport.exe: CMakeFiles/airport.dir/linklibs.rsp
 airport.exe: CMakeFiles/airport.dir/objects1.rsp
 airport.exe: CMakeFiles/airport.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable airport.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nmls1\Desktop\airport\AED_Project\AED_Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable airport.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\airport.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,6 +8,7 @@
 #include <iomanip>
 #include "mainMenu.h"
 #include "clientMenu.h"
+#include "../src/plane.h"
 
 using namespace std;
 
@@ -15,11 +16,13 @@ using namespace std;
 mainMenu::mainMenu() {};
 
 void mainMenu::runMenu() {
+    //Flight flight;
     clientMenu m;
     char a;
     //time_t timer;
+    //flight.readFlight();
     while (true) {
-        system("cls");
+        system(CLEAR);
         cout << setw(40) <<"-------------\n"
              << setw(40) <<"-Our Company-\n"
              << setw(40) <<"-------------\n";
@@ -29,6 +32,8 @@ void mainMenu::runMenu() {
              << "\n   [0] Exit\n";
         cin >> a;
         switch (a) {
+            case '0':
+                exit(0);
             case '1':
                 cout<<"Staff Area";
                 break;
@@ -36,7 +41,6 @@ void mainMenu::runMenu() {
                 cout << "Client Area\n";
                 m.runClientMenu();
                 break;
-            //case '0': //Exit doesnt work??
             default: cout << "Invalid Operation\n"; break;
             //int a = getchar();
         }

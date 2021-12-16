@@ -83,16 +83,34 @@
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/main.cpp">
 			<Option target="airport"/>
 		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/bookingMenu.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/bookingMenu.h">
+			<Option target="airport"/>
+		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/clientMenu.cpp">
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/clientMenu.h">
 			<Option target="airport"/>
 		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/flightsMenu.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/flightsMenu.h">
+			<Option target="airport"/>
+		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/mainMenu.cpp">
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/menus/mainMenu.h">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.h">
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/luggage.cpp">
@@ -117,6 +135,21 @@
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.h">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/date.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/date.h">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/os.h">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/time.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/time.h">
 			<Option target="airport"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/CMakeLists.txt">
