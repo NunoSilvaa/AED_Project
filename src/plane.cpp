@@ -73,10 +73,16 @@ string Plane::getMatricula() {
 int Plane::getCap() {
     return capacidade;
 }
+string Plane::getType() {
+    return type;
+}
 //Setters
 void Plane::setMatricula(string m) {
     this -> matricula = m;
 }
 void Plane::setCap(int cap) {
     this -> capacidade = cap;
+}
+void Plane::setType(string atype) {
+    this -> type = atype;
 }

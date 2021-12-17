@@ -35,16 +35,19 @@ class Plane  /*: public Flight*/ {
 private:
     string matricula;
     int capacidade;
+    string type;
    // vector <Flight> Flightplan;
 public:
-    Plane(string m, int cap);
+    Plane(string m, int cap, string type);
     //void addFlightplan(vector<Flight>& newFlightplan);
     //Getters
     string getMatricula();
     int getCap();
+    string getType();
     //Setters
     void setMatricula(string m);
     void setCap(int cap);
+    void setType(string atype);
 };
 #endif //UNTITLED3_PLANE_H
 
