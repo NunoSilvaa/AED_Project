@@ -248,6 +248,30 @@ menus/mainMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/mainMenu.cpp.s
 .PHONY : menus/mainMenu.cpp.s
 
+menus/reservationMenu.obj: menus/reservationMenu.cpp.obj
+.PHONY : menus/reservationMenu.obj
+
+# target to build an object file
+menus/reservationMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/reservationMenu.cpp.obj
+.PHONY : menus/reservationMenu.cpp.obj
+
+menus/reservationMenu.i: menus/reservationMenu.cpp.i
+.PHONY : menus/reservationMenu.i
+
+# target to preprocess a source file
+menus/reservationMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/reservationMenu.cpp.i
+.PHONY : menus/reservationMenu.cpp.i
+
+menus/reservationMenu.s: menus/reservationMenu.cpp.s
+.PHONY : menus/reservationMenu.s
+
+# target to generate assembly for a file
+menus/reservationMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/reservationMenu.cpp.s
+.PHONY : menus/reservationMenu.cpp.s
+
 src/flight.obj: src/flight.cpp.obj
 .PHONY : src/flight.obj
 
@@ -440,6 +464,9 @@ help:
 	@echo ... menus/mainMenu.obj
 	@echo ... menus/mainMenu.i
 	@echo ... menus/mainMenu.s
+	@echo ... menus/reservationMenu.obj
+	@echo ... menus/reservationMenu.i
+	@echo ... menus/reservationMenu.s
 	@echo ... src/flight.obj
 	@echo ... src/flight.i
 	@echo ... src/flight.s

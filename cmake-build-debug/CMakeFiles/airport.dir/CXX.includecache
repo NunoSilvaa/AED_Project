@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.cpp
-flight.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.h
-string
--
-fstream
--
-iostream
--
-iomanip
--
-algorithm
--
-vector
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/vector
-
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.h
 string
 -
@@ -32,6 +16,10 @@ C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/date.h
 ../utilities/time.h
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/time.h
 
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/passenger.h
+string
+-
+
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/plane.h
 string
 -
@@ -39,6 +27,24 @@ vector
 -
 flight.h
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.h
+
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.cpp
+ticket.h
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.h
+algorithm
+-
+ctime
+-
+fstream
+-
+
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/ticket.h
+passenger.h
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/passenger.h
+flight.h
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/src/flight.h
+list
+-
 
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/utilities/date.h
 iostream

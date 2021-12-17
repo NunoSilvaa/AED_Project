@@ -5,22 +5,28 @@
 #include <iostream>
 #include "clientMenu.h"
 #include "flightsMenu.h"
+#include "bookingMenu.h"
+#include "reservationMenu.h"
 
 
-clientMenu::clientMenu() {};
+ClientMenu::ClientMenu() {};
 
-void clientMenu::runClientMenu() {
-    flightsMenu fm;
-    string name;
+void ClientMenu::runClientMenu() {
+    FlightsMenu fm;
+    BookingMenu bm;
+    ReservationMenu rm;
+    string fname, lname;
     char c;
-    cout << "Tell us your name: ";
-    cin >> name;
+    cout << "Tell us your first and last name: ";
+    cin >> fname;
+    cin >> lname;
     while (true){
         //system("cls");
-        client.setName(name);
+        client.setFname(fname);
+        client.setLname(lname);
         //cout << client.getName();
-        cout << "Hi " << client.getName() << "\n";
-        cout << "\nSelect one option\n";
+        cout << "Hi " << client.getFname() << " " << client.getLname() << ",\n";
+        cout << "\nSelect one option:\n";
         cout << "\n   [1] See all fights available"
              << "\n   [2] Book a flight"
              << "\n   [3] Check you Reservation"
@@ -30,13 +36,13 @@ void clientMenu::runClientMenu() {
             case'0':
                 exit(0);
             case '1':
-                fm.runFlightMenu();
+                fm.runFlightMenu(client);
                 break;
-            case '2':
-                cout << "Book";
-                break;
+            /*case '2':
+                bm.runBookingMenu(client);
+                break;*/
             case '3':
-                cout << "Ticket";
+                rm.runReservationMenu(client);
                 break;
             default: cout << "Invalid Operation\n"; break;
         }

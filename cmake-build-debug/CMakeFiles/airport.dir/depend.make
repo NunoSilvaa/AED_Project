@@ -4,21 +4,39 @@
 CMakeFiles/airport.dir/main.cpp.obj: \
  ../main.cpp \
  ../menus/mainMenu.h \
+ ../src/passenger.h \
  ../utilities/os.h
+CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj: \
+ ../menus/bookingMenu.cpp \
+ ../menus/bookingMenu.h \
+ ../menus/mainMenu.h \
+ ../src/flight.h \
+ ../src/passenger.h \
+ ../src/plane.h \
+ ../src/ticket.h \
+ ../utilities/date.h \
+ ../utilities/os.h \
+ ../utilities/time.h
 CMakeFiles/airport.dir/menus/clientMenu.cpp.obj: \
+ ../menus/bookingMenu.h \
  ../menus/clientMenu.cpp \
  ../menus/clientMenu.h \
+ ../menus/flightsMenu.h \
+ ../menus/reservationMenu.h \
+ ../src/flight.h \
+ ../src/passenger.h \
+ ../src/plane.h \
+ ../src/ticket.h \
+ ../utilities/date.h \
+ ../utilities/time.h
+CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj: \
+ ../menus/bookingMenu.h \
+ ../menus/flightsMenu.cpp \
  ../menus/flightsMenu.h \
  ../src/flight.h \
  ../src/passenger.h \
  ../src/plane.h \
- ../utilities/date.h \
- ../utilities/time.h
-CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj: \
- ../menus/flightsMenu.cpp \
- ../menus/flightsMenu.h \
- ../src/flight.h \
- ../src/plane.h \
+ ../src/ticket.h \
  ../utilities/date.h \
  ../utilities/time.h
 CMakeFiles/airport.dir/menus/mainMenu.cpp.obj: \
@@ -30,6 +48,15 @@ CMakeFiles/airport.dir/menus/mainMenu.cpp.obj: \
  ../src/plane.h \
  ../utilities/date.h \
  ../utilities/os.h \
+ ../utilities/time.h
+CMakeFiles/airport.dir/menus/reservationMenu.cpp.obj: \
+ ../menus/reservationMenu.cpp \
+ ../menus/reservationMenu.h \
+ ../src/flight.h \
+ ../src/passenger.h \
+ ../src/plane.h \
+ ../src/ticket.h \
+ ../utilities/date.h \
  ../utilities/time.h
 CMakeFiles/airport.dir/src/flight.cpp.obj: \
  ../src/flight.cpp \
@@ -50,9 +77,13 @@ CMakeFiles/airport.dir/src/plane.cpp.obj: \
  ../utilities/date.h \
  ../utilities/time.h
 CMakeFiles/airport.dir/src/ticket.cpp.obj: \
+ ../src/flight.h \
  ../src/passenger.h \
+ ../src/plane.h \
  ../src/ticket.cpp \
- ../src/ticket.h
+ ../src/ticket.h \
+ ../utilities/date.h \
+ ../utilities/time.h
 CMakeFiles/airport.dir/utilities/date.cpp.obj: \
  ../utilities/date.cpp \
  ../utilities/date.h

@@ -7,15 +7,16 @@
 
 
 #include "../src/flight.h"
+#include "../src/passenger.h"
 
-class flightsMenu {
+class FlightsMenu {
 private:
     Flight flight;
 
 public:
-    flightsMenu();
+    FlightsMenu();
 
-    void runFlightMenu();
+    void runFlightMenu(Passenger client);
 
 };
 

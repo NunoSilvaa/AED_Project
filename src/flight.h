@@ -67,8 +67,10 @@ public:
     //void setPlane(Plane* plane);
 
     void addFlight(vector<Flight> flights, Flight flight);
+    Flight findFlight(int numfly);
     void readFlight();
     void display();
+    void displayFiltered();
 
     bool compareDuration(const Flight& f1, const Flight& f2);
     void sortByDuration();

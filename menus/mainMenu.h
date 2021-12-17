@@ -6,10 +6,12 @@
 #define AIRPORT_MAINMENU_H
 
 #include"../utilities/os.h"
+#include "../src/passenger.h"
 
 class mainMenu {
 public:
     mainMenu();
+
     void runMenu();
 
 };

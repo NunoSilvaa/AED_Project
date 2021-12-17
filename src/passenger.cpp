@@ -8,27 +8,48 @@ using namespace std;
 
 Passenger::Passenger() {}
 
-Passenger::Passenger(string name, bool checkinBag) {
-    this->name = name;
+Passenger::Passenger(string name, string lname, bool checkinBag, int passportNum) {
+    this->fname = fname;
+    this->lname = lname;
     this->checkinBag = checkinBag;
+    this->passportNum = passportNum;
 }
 
-string Passenger::getName() const {
-    return name;
+string Passenger::getFname() const {
+    return fname;
+}
+
+string Passenger::getLname() const {
+    return lname;
 }
 
 bool Passenger::getCheckinBag() const{
     return checkinBag;
 }
 
-void Passenger::setName(std::string name) {
-    this->name = name;
+int Passenger::getPassportNum() const {
+    return passportNum;
+}
+
+void Passenger::setFname(string fname) {
+    this->fname = fname;
+}
+
+void Passenger::setLname(string lname) {
+    this->lname = lname;
 }
 
 void Passenger::setCheckinBag(bool CheckinBag) {
     this->checkinBag = checkinBag;
 }
 
-void Passenger::displayPassenger() {
-
+void Passenger::setPassportNum(int passportNum) {
+    this->passportNum = passportNum;
 }
+
+bool Passenger::operator==(const Passenger &p) {
+    return (p.fname == fname && p.lname == lname && p.passportNum == passportNum);
+}
+/*void Passenger::displayPassenger() {
+
+}*/
