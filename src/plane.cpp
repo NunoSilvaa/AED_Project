@@ -4,14 +4,56 @@
 #include "flight.h"
 //#include "../Data/flights.txt"
 #include <string>
-#include "fstream"
 using namespace std;
+//Flight stuff
+/*Flight::Flight() {};
+Flight::Flight(int anumfly, int adate, int adur, string origin, string adestination){
+    this -> numfly = anumfly;
+    this -> date = adate;
+    this -> duration = adur;
+    this -> origin = origin;
+    this -> destination = adestination;
+}*/
+//Getters
+/*int Flight::getNumfly() const{
+    return numfly;
+}
+int Flight::getDate() {
+    return date;
+}
+int Flight::getDuration() {
+    return duration;
+}
+string Flight::getOrigin() {
+    return origin;
+}
+string Flight::getDestination() {
+    return destination;
+}
+//Setters
+void Flight::setNumfly(int anumfly) {
+    this ->numfly = anumfly;
+}
+void Flight::setDate(int adate) {
+    this ->date = adate;
+}
+void Flight::setDuration(int adur) {
+    this ->duration = adur;
+}
+void Flight::setOrigin(string aorigin) {
+    this ->origin = aorigin;
+}
+void Flight::setDestination(string adest) {
+    this ->destination = adest;
+}
 
+void Flight::readFlight() {
+    ifstream fin("Flights")
+}*/
 //Plane stuff
-Plane::Plane(){}
-Plane::Plane(string lp, int cap) {
-    this -> licensePlate = lp;
-    this -> capacity = cap;
+/*Plane::Plane(string m, int cap) {
+    this -> matricula = m;
+    this -> capacidade = cap;
 }
 //Vector do voo
 /*void addFlightplan(vector<Flight>& newFlightplan){
@@ -25,53 +67,21 @@ Plane::Plane(string lp, int cap) {
     }
 }*/
 //Getters
-string Plane::getLicensePlate() {
-    return licensePlate;
+string Plane::getMatricula() {
+    return matricula;
 }
-int Plane::getCapapcity() {
-    return capacity;
+int Plane::getCap() {
+    return capacidade;
 }
 string Plane::getType() {
     return type;
 }
 //Setters
-void Plane::setLicensePlate(string lp) {
-    this -> licensePlate = lp;
+void Plane::setMatricula(string m) {
+    this -> matricula = m;
 }
-void Plane::setCapacity(int cap) {
-    this -> capacity = cap;
-}
-
-void Plane::addPlane(Plane plane) {
-    planes.push_back(plane);
-
-    fstream outf("../Data/planes.txt", fstream::app);
-    outf << "\n" <<plane.getLicensePlate() << " "
-         << plane.getCapapcity();
-    outf.close();
-}
-
-void Plane::readPlanes() {
-    ifstream fin("../Data/tickets.txt");
-    int cap;
-    string lp;
-
-    while(fin >> lp >> cap){
-        Plane plane(lp, cap);
-        planes.push_back(plane);
-    }
-}
-
-string Plane::generateLicensePlate() {
-    string lp = "AA-AAA";
-
-    lp[0] = rand() % 26;
-    lp[1] = rand() % 26;
-    lp[3] = rand() % 26;
-    lp[4] = rand() % 26;
-    lp[6] = rand() % 26;
-
-    return lp;
+void Plane::setCap(int cap) {
+    this -> capacidade = cap;
 }
 void Plane::setType(string atype) {
     this -> type = atype;

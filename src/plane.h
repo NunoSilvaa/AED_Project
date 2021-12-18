@@ -6,31 +6,48 @@
 
 #include <string>
 #include <vector>
-#include <list>
-
+#include "flight.h"
 
 using namespace std;
-
+/*class Flight {
+private:
+    int numfly;
+    int date; //data da partida
+    int duration;
+    string origin;
+    string destination;
+public:
+    Flight();
+    Flight(int anumfly, int adate, int adur, string ori, string dest);
+    int getNumfly();
+    int getDate();
+    int getDuration();
+    string getOrigin();
+    string getDestination();
+    void setNumfly(int anumfly);
+    void setDate(int adate);
+    void setDuration(int adur);
+    void setOrigin(string aorigin);
+    void setDestination(string adest);
+    void readFlight();
+};*/
 class Plane  /*: public Flight*/ {
 private:
-    string licensePlate;
-    int capacity;
-    list<Plane> planes;
+    string matricula;
+    int capacidade;
+    string type;
    // vector <Flight> Flightplan;
 public:
-    Plane();
-    Plane(string lp, int cap);
+    Plane(string m, int cap, string type);
     //void addFlightplan(vector<Flight>& newFlightplan);
     //Getters
-    string getLicensePlate();
-    int getCapapcity();
+    string getMatricula();
+    int getCap();
+    string getType();
     //Setters
-    void setLicensePlate(string lp);
-    void setCapacity(int cap);
-
-    void addPlane(Plane plane);
-    void readPlanes();
-    string generateLicensePlate();
+    void setMatricula(string m);
+    void setCap(int cap);
+    void setType(string atype);
 };
 #endif //UNTITLED3_PLANE_H
 
