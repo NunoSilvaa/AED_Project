@@ -7,13 +7,13 @@
 
 using namespace std;
 
-#include <list>
+#include <queue>
 #include <stack>
 
 class Luggage {
 private:
     int weight;
-    list<stack<Luggage>> luggageCar;
+    queue<stack<Luggage>> luggageCar;
 
 public:
     Luggage(int weight);

@@ -8,7 +8,7 @@ using namespace std;
 
 Passenger::Passenger() {}
 
-Passenger::Passenger(string name, string lname, bool checkinBag, int passportNum) {
+Passenger::Passenger(string fname, string lname, bool checkinBag, int passportNum) {
     this->fname = fname;
     this->lname = lname;
     this->checkinBag = checkinBag;

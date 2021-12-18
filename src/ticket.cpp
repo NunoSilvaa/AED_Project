@@ -11,9 +11,8 @@ using namespace std;
 
 Ticket::Ticket() {}
 
-Ticket::Ticket(int num, int seat, Passenger owner, Flight flight) {
+Ticket::Ticket(int num, string seat, Passenger owner, Flight flight) {
     this->num = num;
-    //this->price = price;
     this->seat = seat;
     this->owner = owner;
     this->flight = flight;
@@ -27,7 +26,7 @@ int Ticket::getNum() const {
     return price;
 }*/
 
-int Ticket::getSeat() const {
+string Ticket::getSeat() const {
     return seat;
 }
 
@@ -47,7 +46,7 @@ void Ticket::setNum(int num) {
     this->price = price;
 }*/
 
-void Ticket::setSeat(int seat) {
+void Ticket::setSeat(string seat) {
     this->seat = seat;
 }
 
@@ -59,6 +58,7 @@ void Ticket::setFlight(Flight flight) {
     this->flight = flight;
 }
 
+
 // add, remove and search
 void Ticket::addTicket(Ticket ticket) {
     tickets.push_back(ticket);
@@ -67,8 +67,12 @@ void Ticket::addTicket(Ticket ticket) {
     outf << "\n" <<ticket.getNum() << " "
          << ticket.getSeat() << " "
          << ticket.getOwner().getFname() << " "
-         << ticket.getOwner().getLname() << " "
-         << ticket.getOwner().getPassportNum();
+         << ticket.getOwner().getLname() << " ";
+    if(ticket.getOwner().getCheckinBag())
+        outf << 1 << " ";
+    else
+        outf << 0 << " ";
+    outf << ticket.getOwner().getPassportNum();
     outf.close();
 }
 
@@ -92,6 +96,20 @@ void Ticket::addTicket(Ticket ticket) {
     //add exception later
     //return *it;
 }*/
+void Ticket::readTickets() {
+    ifstream fin("../Data/tickets.txt");
+    int num, passportNum;
+    string fName, lName, seat;
+    bool bagBool;
+    Flight flight;
+
+    while(fin >> num >> seat >> fName >> lName >> bagBool >> passportNum){
+        Passenger owner(fName, lName, bagBool, passportNum);
+        Ticket ticket(num, seat, owner, flight);
+        tickets.push_back(ticket);
+    }
+    //cout << bagBool;
+}
 
 int Ticket::countFlightTickets(int numfly) {
     list<Ticket>::iterator it;
@@ -107,20 +125,33 @@ int Ticket::countFlightTickets(int numfly) {
 int Ticket::generateTicketNum() {
     int num;
 
-    srand(time(NULL));
-
     num = rand() % 999999 + 000000;
 
     return num;
 }
 
+string Ticket::generateSeatNum(Plane plane) {
+    int num;
+    char ch;
+    string seat;
+
+    num = rand() % (plane.getCapapcity()/6) + 00;
+    ch = 'A' + rand() % 6;
+
+    seat = ch + to_string(num);
+    return seat;
+}
+
 void Ticket::display(Passenger client) {
-    int passportNum;
-    cout << "Insert your passport number: ";
-    cin >> passportNum;
-    client.setPassportNum(passportNum);
+    if (client.getPassportNum() == NULL){
+        int passportNum;
+        cout << "Insert your passport number: ";
+        cin >> passportNum;
+        client.setPassportNum(passportNum);
+    }
+
     for(auto i: tickets) {
-        if(i.owner == client){
+        if(i.getOwner() == client){
             cout << "  ____________________________________________________________  \n";
             cout << " |                                                            | \n";
             cout << "|                                                              |\n";

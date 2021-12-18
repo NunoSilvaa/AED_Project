@@ -12,43 +12,20 @@
 
 using namespace std;
 
-/*class Flight {
-private:
-    int numfly;
-    int date; //data da partida
-    int duration;
-    string origin;
-    string destination;
-public:
-    Flight(int anumfly, int adate, int adur, string ori, string dest);
-
-    int getNumfly();
-    int getDate();
-    int getDuration();
-    string getOrigin();
-    string getDestination();
-
-    void setNumfly(int anumfly);
-    void setDate(int adate);
-    void setDuration(int adur);
-    void setOrigin(string aorigin);
-    void setDestination(string adest);
-
-};*/
 
 class Flight {
 private:
     int numfly;
     Date date; //data da partida
     Time duration;
+    Plane plane;
     string origin;
     string destination;
     int bprice;
-    //Plane* plane;
     std::vector<Flight> flights;
 public:
     Flight();
-    Flight(int anumfly, Date adate, Time adur, string ori, string dest, int bprice/*, Plane* plane*/);
+    Flight(int anumfly, Date adate, Time adur, string ori, string dest, int bprice, Plane plane);
 
     int getNumfly() const;
     Date getDate() const;
@@ -56,7 +33,7 @@ public:
     string getOrigin() const;
     string getDestination() const;
     int getBprice() const;
-    //Plane getPlane() const;
+    Plane getPlane() const;
 
     void setNumfly(int anumfly);
     void setDate(Date adate);
@@ -64,7 +41,7 @@ public:
     void setOrigin(string aorigin);
     void setDestination(string adest);
     void setBprice(int bprice);
-    //void setPlane(Plane* plane);
+    void setPlane(Plane plane);
 
     void addFlight(vector<Flight> flights, Flight flight);
     Flight findFlight(int numfly);

@@ -9,6 +9,7 @@
 #include "../src/passenger.h"
 #include "../src/flight.h"
 #include "../src/ticket.h"
+#include<ctime>
 
 class BookingMenu {
 public:

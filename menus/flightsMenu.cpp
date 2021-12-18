@@ -11,6 +11,7 @@ FlightsMenu::FlightsMenu() {}
 
 void FlightsMenu::runFlightMenu(Passenger client) {
     BookingMenu bm;
+    Plane plane;
     Flight flight;
     char c;
     int numfly;

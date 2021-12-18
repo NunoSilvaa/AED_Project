@@ -13,14 +13,14 @@
 using namespace std;
 
 Flight::Flight() {};
-Flight::Flight(int anumfly, Date adate, Time adur, string origin, string adestination, int bprice/*, Plane* plane*/){
+Flight::Flight(int anumfly, Date adate, Time adur, string origin, string adestination, int bprice, Plane plane){
     this -> numfly = anumfly;
     this -> date = adate;
     this -> duration = adur;
     this -> origin = origin;
     this -> destination = adestination;
     this -> bprice = bprice;
-    //this -> plane = plane;
+    this -> plane = plane;
 }
 //Getters
 int Flight::getNumfly() const{
@@ -41,9 +41,9 @@ string Flight::getDestination() const{
 int Flight::getBprice() const {
     return bprice;
 }
-/*Plane Flight::getPlane() const{
-    return *plane;
-}*/
+Plane Flight::getPlane() const{
+    return plane;
+}
 //Setters
 void Flight::setNumfly(int anumfly) {
     this ->numfly = anumfly;
@@ -63,9 +63,9 @@ void Flight::setDestination(string adest) {
 void Flight::setBprice(int bprice) {
     this ->bprice = bprice;
 }
-/*void Flight::setPlane(Plane* plane) {
+void Flight::setPlane(Plane plane) {
     this ->plane = plane;
-}*/
+}
 
 void addFlight(vector<Flight> flights, Flight flight){
     flights.push_back(flight);
@@ -74,13 +74,15 @@ void addFlight(vector<Flight> flights, Flight flight){
 
 void Flight::readFlight() {
     ifstream fin("../Data/flights.txt");
-    int year, month, day, hour, min;
+    int year, month, day, hour, min, cap;
+    string lp;
     char sep;
 
-    while(fin >> numfly >> day >> sep >> month >> sep >> year >> hour >> sep >> min >> origin >> destination >> bprice){
+    while(fin >> numfly >> day >> sep >> month >> sep >> year >> hour >> sep >> min >> origin >> destination >> bprice >> lp >> cap){
         Date date(day, month, year);
         Time duration(hour, min);
-        Flight flight(numfly, date, duration, origin, destination, bprice);
+        Plane plane(lp, cap);
+        Flight flight(numfly, date, duration, origin, destination, bprice, plane);
         flights.push_back(flight);
     }
 }

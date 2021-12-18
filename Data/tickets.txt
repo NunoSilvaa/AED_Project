@@ -1,6 +1,23 @@
-21078 1 Rafa Silva 321
-23788 1 Nuno Silva 111
-23788 1 Nuno Silva 111
-24190 1 Nuno Silva 222
-24190 1 Nuno Silva 222
-24190 1 Nuno Silva 222
+3625 1 Rafa S 0 222
+13925 1 Nuno Silva 1 111
+13925 1 Nuno Silva 1 111
+13925 1 Nuno Silva 1 111
+13925 1 Nuno Silva 1 111
+14379 1 Joao Lopes 1 333
+14379 1 Joao Lopes 1 333
+14379 1 Joao Lopes 1 333
+15463 1 Ana Ana 1 444
+15463 1 Ana Ana 1 444
+15463 1 Ana Ana 1 444
+16240 1 Bia Sousa 1 555
+15687 1 Bia Sousa 1 555
+16154 1 Bia Sousa 1 555
+16730 1 Nuno Sousa 1 666
+22316 1 Nuno Sousa 1 666
+8804 1 Nuno Sousa 1 666
+23199 1 Nuno Sousa 1 666
+25718 1 Nuno Sousa 1 666
+9439 X Paulo Abreu 1 777
+21199 S Paulo Abreu 1 777
+10334 D14 Valeria Tomas 1 888
+28179 D17 Valeria Tomas 1 888
