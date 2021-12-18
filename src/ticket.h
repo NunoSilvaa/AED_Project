@@ -7,6 +7,7 @@
 
 #include "passenger.h"
 #include "flight.h"
+#include "plane.h"
 #include <list>
 
 using namespace std;
@@ -15,23 +16,22 @@ class Ticket{
 private:
     int price;
     int num;
-    int seat;
+    string seat;
     Passenger owner;
     Flight flight;
     list<Ticket> tickets;
 public:
     Ticket();
-    Ticket(int num, int seat, Passenger owner, Flight flight);
+    Ticket(int num, string seat, Passenger owner, Flight flight);
 
     int getNum() const;
-    //int getPrice() const;
-    int getSeat() const;
+    string getSeat() const;
     Passenger getOwner() const;
     Flight getFlight() const;
 
     void setNum(int num);
     //void setPrice(int price);
-    void setSeat(int seat);
+    void setSeat(string seat);
     void setOwner(Passenger owner);
     void setFlight(Flight flight);
 
@@ -41,6 +41,8 @@ public:
     int countFlightTickets(int numfly);
 
     int generateTicketNum();
+    string generateSeatNum(Plane plane);
+    void readTickets();
     void display(Passenger client);
 
     //bool operator==(const Ticket& t);

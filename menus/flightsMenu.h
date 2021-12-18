@@ -8,6 +8,7 @@
 
 #include "../src/flight.h"
 #include "../src/passenger.h"
+#include "../src/plane.h"
 
 class FlightsMenu {
 private:

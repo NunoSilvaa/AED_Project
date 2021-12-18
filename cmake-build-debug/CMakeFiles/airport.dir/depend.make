@@ -43,12 +43,9 @@ CMakeFiles/airport.dir/menus/mainMenu.cpp.obj: \
  ../menus/clientMenu.h \
  ../menus/mainMenu.cpp \
  ../menus/mainMenu.h \
- ../src/flight.h \
  ../src/passenger.h \
  ../src/plane.h \
- ../utilities/date.h \
- ../utilities/os.h \
- ../utilities/time.h
+ ../utilities/os.h
 CMakeFiles/airport.dir/menus/reservationMenu.cpp.obj: \
  ../menus/reservationMenu.cpp \
  ../menus/reservationMenu.h \

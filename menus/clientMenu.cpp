@@ -15,6 +15,7 @@ void ClientMenu::runClientMenu() {
     FlightsMenu fm;
     BookingMenu bm;
     ReservationMenu rm;
+    Ticket ticket;
     string fname, lname;
     char c;
     cout << "Tell us your first and last name: ";
@@ -42,6 +43,7 @@ void ClientMenu::runClientMenu() {
                 bm.runBookingMenu(client);
                 break;*/
             case '3':
+                //ticket.readTickets();
                 rm.runReservationMenu(client);
                 break;
             default: cout << "Invalid Operation\n"; break;
