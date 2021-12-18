@@ -8,12 +8,12 @@
 
 #include "../src/passenger.h"
 
-class clientMenu{
+class ClientMenu{
 private:
     Passenger client;
 
 public:
-    clientMenu();
+    ClientMenu();
 
     void runClientMenu();
 

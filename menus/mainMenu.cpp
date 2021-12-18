@@ -17,7 +17,7 @@ mainMenu::mainMenu() {};
 
 void mainMenu::runMenu() {
     //Flight flight;
-    clientMenu m;
+    ClientMenu m;
     char a;
     //time_t timer;
     //flight.readFlight();

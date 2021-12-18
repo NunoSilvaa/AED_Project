@@ -71,6 +71,7 @@ void addFlight(vector<Flight> flights, Flight flight){
     flights.push_back(flight);
 }
 
+
 void Flight::readFlight() {
     ifstream fin("../Data/flights.txt");
     int year, month, day, hour, min;
@@ -81,6 +82,12 @@ void Flight::readFlight() {
         Time duration(hour, min);
         Flight flight(numfly, date, duration, origin, destination, bprice);
         flights.push_back(flight);
+    }
+}
+Flight Flight::findFlight(int numfly) {
+    for(auto i: flights){
+        if(i.getNumfly() == numfly)
+            return i;
     }
 }
 
@@ -99,6 +106,31 @@ void Flight::display() {
         cout << setw(10) << x.bprice << "$"
              << setw(12) << x.numfly << "\n";
 
+    }
+}
+
+void Flight::displayFiltered() {
+    string origin, destination;
+    cout << "From: ";
+    cin >> origin;
+    cout << "To: ";
+    cin >> destination;
+    cout << "From" << setw(15) << "To" << setw(17)
+         << "Duration" << setw(13)
+         << "Date" << setw(13)
+         << "Price" << setw(18)
+         << "Flight Number\n\n";
+
+    for (auto x: flights) {
+        if(x.origin == origin && x.destination == destination) {
+            cout << x.origin << " -------> "
+                 << x.destination << setw(10);
+            x.duration.output(cout);
+            cout << setw(10);
+            x.date.output(cout);
+            cout << setw(10) << x.bprice << "$"
+                 << setw(12) << x.numfly << "\n";
+        }
     }
 }
 

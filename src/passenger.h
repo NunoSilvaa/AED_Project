@@ -11,21 +11,30 @@ using namespace std;
 
 class Passenger {
 private:
-    string name;
+    string fname;
+    string lname;
     bool checkinBag;
+    int passportNum;
     //Ticket ticket;
 public:
     Passenger();
-    Passenger(string name, bool checkinBag);
+    Passenger(string fname, string lname, bool checkinBag, int passportNum);
 
-    string getName() const;
+    string getFname() const;
+    string getLname() const;
     bool getCheckinBag() const;
+    int getPassportNum() const;
 
-    void setName(string name);
-    void setCheckinBag(bool CheckinBag);
-    void displayPassenger();
+    void setFname(string fname);
+    void setLname(string lname);
+    void setCheckinBag(bool checkinBag);
+    void setPassportNum(int passportNum);
 
-    friend class clientMenu;
+    bool operator==(const Passenger& p);
+
+    //void displayPassenger();
+
+    //friend class clientMenu;
 };
 
 #endif //AIRPORT_PASSENGER_H

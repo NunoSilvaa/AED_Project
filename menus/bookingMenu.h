@@ -6,8 +6,15 @@
 #define AIRPORT_BOOKINGMENU_H
 
 
-class bookingMenu {
+#include "../src/passenger.h"
+#include "../src/flight.h"
+#include "../src/ticket.h"
 
+class BookingMenu {
+public:
+    BookingMenu();
+
+    void runBookingMenu(Passenger client, Flight flight);
 };
 
 
