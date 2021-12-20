@@ -22,15 +22,12 @@ void ClientMenu::runClientMenu() {
     cin >> fname;
     cin >> lname;
     while (true){
-        //system("cls");
         client.setFname(fname);
         client.setLname(lname);
-        //cout << client.getName();
         cout << "Hi " << client.getFname() << " " << client.getLname() << ",\n";
         cout << "\nSelect one option:\n";
         cout << "\n   [1] See all fights available"
-             << "\n   [2] Book a flight"
-             << "\n   [3] Check you Reservation"
+             << "\n   [2] Check you Reservation"
              << "\n   [0] Exit\n";
         cin >> c;
         switch (c) {
@@ -39,11 +36,7 @@ void ClientMenu::runClientMenu() {
             case '1':
                 fm.runFlightMenu(client);
                 break;
-            /*case '2':
-                bm.runBookingMenu(client);
-                break;*/
-            case '3':
-                //ticket.readTickets();
+            case '2':
                 rm.runReservationMenu(client);
                 break;
             default: cout << "Invalid Operation\n"; break;

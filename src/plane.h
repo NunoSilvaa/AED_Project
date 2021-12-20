@@ -29,8 +29,13 @@ public:
     void setCapacity(int cap);
 
     void addPlane(Plane plane);
+    void removePlane(Plane plane);
     void readPlanes();
+    //Plane findPlane(string lp);
     string generateLicensePlate();
+
+    bool operator==(const Plane& p);
+    //bool operator()(const Plane& plane, const string& lp) const;
 };
 #endif //UNTITLED3_PLANE_H
 

@@ -12,7 +12,7 @@ class Staffmenu {
 public:
     Staffmenu();
 
-  void runStaffmenu(string type, string worker, Data data);
+    void runStaffmenu(string type, string worker, Data data);
 };
 
 

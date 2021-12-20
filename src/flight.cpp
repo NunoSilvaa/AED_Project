@@ -67,10 +67,28 @@ void Flight::setPlane(Plane plane) {
     this ->plane = plane;
 }
 
-void addFlight(vector<Flight> flights, Flight flight){
+void Flight::addFlight(Flight flight) {
     flights.push_back(flight);
+
+    fstream outf("../Data/flights.txt", fstream::app);
+    outf << "\n" << flight.numfly << " "
+         << flight.date.getDay() << "/" << flight.date.getMonth() << "/" << flight.date.getYear() << " "
+         << flight.duration.getHour() << ":" << flight.duration.getMinute() << " "
+         << flight.origin << " "
+         << flight.destination << " "
+         << flight.bprice << " "
+         << flight.plane.getLicensePlate() << " " << flight.plane.getCapapcity();
+    outf.close();
 }
 
+void Flight::removeFlight(Flight flight) {
+    for(auto i = flights.begin(); i != flights.end(); i++){
+        if(*i == flight) {
+            flights.erase(i);
+            i--;
+        }
+    }
+}
 
 void Flight::readFlight() {
     ifstream fin("../Data/flights.txt");
@@ -170,3 +188,6 @@ void Flight::sortByBprice() {
     sort(flights.begin(), flights.end(), [this](Flight& f1, Flight& f2){return compareBprice(f1, f2);});
 }
 
+bool Flight::operator==(const Flight &f) {
+    return (f.numfly == numfly);
+}

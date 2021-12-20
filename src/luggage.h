@@ -7,21 +7,40 @@
 
 using namespace std;
 
+#include "passenger.h"
+#include "plane.h"
 #include <queue>
 #include <stack>
 
 class Luggage {
 private:
-    int weight;
-    queue<stack<Luggage>> luggageCar;
+    //Passenger client;
+    //Plane plane;
+    string fName, lName, lp;
+    list<Luggage> treadmill;
+    vector<stack<Luggage>> luggageCar;
 
 public:
-    Luggage(int weight);
+    Luggage();
+    Luggage(string fName, string lName, string lp);
 
-    int getWeight() const;
+    string getFname() const;
+    string getLname() const;
+    string getLp() const;
 
-    void setWeight(int weight);
+    void setFname(string fName);
+    void setLname(string lName);
+    void setLp(string lp);
+
+    void readLuggage();
+    void addToTreadmill(Luggage luggage);
+    void addToCar(string lp);
+    int numCarsUsed();
+    void print_vect();
+
+    //bool operator==(const string& lp1);
 };
 
 #endif //AIRPORT_LUGGAGE_H
+
 

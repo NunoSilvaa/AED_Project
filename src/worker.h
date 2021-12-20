@@ -8,26 +8,27 @@
 #include <string>
 #include <iostream>
 
-class Worker {
-private:
-    string name;
-    int w; //work load, se esta livre pra trabalhar = 0 ,se esta num trabalho = 1
+class worker {
+    class Worker {
+    private:
+        string name;
+        int w; //work load, se esta livre pra trabalhar = 0 ,se esta num trabalho = 1
 
-public:
-    queue<Worker> employees = {};
-    Worker(string aname, int aw);
+    public:
+        queue<Worker> employees = {};
+        Worker(string aname, int aw);
 
-    Worker();
+        Worker();
 
-    string getName();
-   int getW();
+        string getName();
+        int getW();
 
-   void setName(string aname);
-   void setW(int aw);
+        void setName(string aname);
+        void setW(int aw);
 
-   void addToE();
-   Worker takeWorker();
-};
+        void addToE();
+        Worker takeWorker();
+    };
 
 
 #endif //AIRPORT_WORKER_H

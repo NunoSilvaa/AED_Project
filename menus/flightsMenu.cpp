@@ -17,13 +17,11 @@ void FlightsMenu::runFlightMenu(Passenger client) {
     int numfly;
     flight.readFlight();
     flight.display();
-    /*cout << "\nDo you want to book a flight?";*/
     cout << "\nSort by:\n"
          << "[1]   Duration\n"
          << "[2]   Date\n"
          << "[3]   Price\n";
     cin >> c;
-    //system("pause");
     switch (c) {
         case '1':
             flight.sortByDuration();
@@ -39,7 +37,7 @@ void FlightsMenu::runFlightMenu(Passenger client) {
             break;
         default: cout << "Invalid Operation\n"; break;
     }
-    cout << "\nDo you want to book a flight? [y/n] ";
+    cout << "\nDo you want to book a flight? [y/n]: ";
     cin >> c;
     switch (c) {
         case 'n':

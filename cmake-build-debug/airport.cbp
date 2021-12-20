@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/menus/bookingMenu.h">
 			<Option target="airport"/>
 		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/menus/bossMenu.cpp">
+			<Option target="airport"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/menus/bossMenu.h">
+			<Option target="airport"/>
+		</Unit>
 		<Unit filename="C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/menus/clientMenu.cpp">
 			<Option target="airport"/>
 		</Unit>

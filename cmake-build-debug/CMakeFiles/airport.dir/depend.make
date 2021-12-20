@@ -17,6 +17,15 @@ CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj: \
  ../utilities/date.h \
  ../utilities/os.h \
  ../utilities/time.h
+CMakeFiles/airport.dir/menus/bossMenu.cpp.obj: \
+ ../menus/bossMenu.cpp \
+ ../menus/bossMenu.h \
+ ../src/flight.h \
+ ../src/luggage.h \
+ ../src/passenger.h \
+ ../src/plane.h \
+ ../utilities/date.h \
+ ../utilities/time.h
 CMakeFiles/airport.dir/menus/clientMenu.cpp.obj: \
  ../menus/bookingMenu.h \
  ../menus/clientMenu.cpp \
@@ -40,9 +49,11 @@ CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj: \
  ../utilities/date.h \
  ../utilities/time.h
 CMakeFiles/airport.dir/menus/mainMenu.cpp.obj: \
+ ../menus/bossMenu.h \
  ../menus/clientMenu.h \
  ../menus/mainMenu.cpp \
  ../menus/mainMenu.h \
+ ../src/luggage.h \
  ../src/passenger.h \
  ../src/plane.h \
  ../utilities/os.h
@@ -63,7 +74,9 @@ CMakeFiles/airport.dir/src/flight.cpp.obj: \
  ../utilities/time.h
 CMakeFiles/airport.dir/src/luggage.cpp.obj: \
  ../src/luggage.cpp \
- ../src/luggage.h
+ ../src/luggage.h \
+ ../src/passenger.h \
+ ../src/plane.h
 CMakeFiles/airport.dir/src/passenger.cpp.obj: \
  ../src/passenger.cpp \
  ../src/passenger.h

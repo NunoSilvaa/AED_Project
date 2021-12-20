@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/airport.dir/main.cpp.obj"
   "CMakeFiles/airport.dir/menus/bookingMenu.cpp.obj"
+  "CMakeFiles/airport.dir/menus/bossMenu.cpp.obj"
   "CMakeFiles/airport.dir/menus/clientMenu.cpp.obj"
   "CMakeFiles/airport.dir/menus/flightsMenu.cpp.obj"
   "CMakeFiles/airport.dir/menus/mainMenu.cpp.obj"

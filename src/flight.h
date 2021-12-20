@@ -22,7 +22,7 @@ private:
     string origin;
     string destination;
     int bprice;
-    std::vector<Flight> flights;
+    vector<Flight> flights;
 public:
     Flight();
     Flight(int anumfly, Date adate, Time adur, string ori, string dest, int bprice, Plane plane);
@@ -43,7 +43,8 @@ public:
     void setBprice(int bprice);
     void setPlane(Plane plane);
 
-    void addFlight(vector<Flight> flights, Flight flight);
+    void addFlight(Flight flight);
+    void removeFlight(Flight flight);
     Flight findFlight(int numfly);
     void readFlight();
     void display();
@@ -55,6 +56,8 @@ public:
     void sortByDate();
     bool compareBprice(const Flight& f1, const Flight& f2);
     void sortByBprice();
+
+    bool operator==(const Flight& f);
 };
 
 

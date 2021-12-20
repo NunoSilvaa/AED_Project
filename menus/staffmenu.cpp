@@ -6,7 +6,7 @@
 #include "mainMenu.h"
 #include "../src/worker.h"
 
-//Staffmenu::Staffmenu() {}
+Staffmenu::Staffmenu() {}
 
 void Staffmenu::runStaffmenu() {
     int n;

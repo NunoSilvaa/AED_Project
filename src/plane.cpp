@@ -2,14 +2,17 @@
 // Created by croipi on 13/12/21.
 //
 #include "flight.h"
+#include "algorithm"
 //#include "../Data/flights.txt"
 #include <string>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
 //Plane stuff
 Plane::Plane(){}
+
 Plane::Plane(string lp, int cap) {
     this->licensePlate = lp;
     this->capacity = cap;
@@ -50,6 +53,15 @@ void Plane::addPlane(Plane plane) {
     outf.close();
 }
 
+void Plane::removePlane(Plane plane) {
+    for(auto i = planes.begin(); i != planes.end(); i++){
+        if(*i == plane) {
+            planes.erase(i);
+            i--;
+        }
+    }
+}
+
 void Plane::readPlanes() {
     ifstream fin("../Data/tickets.txt");
     int cap;
@@ -61,14 +73,30 @@ void Plane::readPlanes() {
     }
 }
 
-string Plane::generateLicensePlate() {
-    string lp = "AA-AAA";
+/*Plane Plane::findPlane(string lp){
+    return *(find(planes.begin(), planes.end(), lp));
+}*/
 
-    lp[0] = rand() % 26;
-    lp[1] = rand() % 26;
-    lp[3] = rand() % 26;
-    lp[4] = rand() % 26;
-    lp[6] = rand() % 26;
+string Plane::generateLicensePlate() {
+    static const char letters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string lp /*= "AA-AAA"*/;
+    lp.reserve(6);
+    srand(time(NULL));
+
+    lp += letters[rand() % 26];
+    lp += letters[rand() % 26];
+    lp += '-';
+    lp += letters[rand() % 26];
+    lp += letters[rand() % 26];
+    lp += letters[rand() % 26];
 
     return lp;
 }
+
+bool Plane::operator==(const Plane &p) {
+    return (p.licensePlate == licensePlate);
+}
+
+/*bool Plane::operator()(const Plane& plane, const string &lp) const{
+    return (plane.licensePlate == lp);
+}*/

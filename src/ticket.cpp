@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <ctime>
 #include <fstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -108,7 +109,6 @@ void Ticket::readTickets() {
         Ticket ticket(num, seat, owner, flight);
         tickets.push_back(ticket);
     }
-    //cout << bagBool;
 }
 
 int Ticket::countFlightTickets(int numfly) {
@@ -152,23 +152,31 @@ void Ticket::display(Passenger client) {
 
     for(auto i: tickets) {
         if(i.getOwner() == client){
-            cout << "  ____________________________________________________________  \n";
-            cout << " |                                                            | \n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|       ";cout << i.owner.getFname() << " " << i.owner.getLname(); cout << "                                             |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << "|                                                              |\n";
-            cout << " |                                                            | \n";
-            cout << "  ____________________________________________________________  \n";
+            cout << "\nYour ticket info:\n\n";
+            cout << "Ticket owner: " << i.owner.getFname() << " " << i.owner.getLname() << "\n"
+                 << "Ticket number: " << i.num << "\n"
+                 << "From: " << i.flight.getOrigin() << " " << "To: " << i.flight.getDestination() << "\n"
+                 << "Flight number: " << i.flight.getNumfly() << "\n"
+                 << "Seat: " << i.seat << "\n";
         }
     }
 }
+
+/*cout << "  ____________________________________________________________  \n";
+cout << " |" << setw(62) << setfill(sep) << "|\n";
+cout << left << "|" << setw(64) << setfill(sep) << "|\n";
+cout << "|                                                              |\n";
+cout << "|" << setw(i.owner.getFname().size() + 10)  << i.owner.getFname() << " " << setw(i.owner.getLname().size()) << i.owner.getLname(); //<< setw(54 - nameWidth) << "|\n";
+cout << "|                                                              |\n";
+cout << "|" << setw(10) << setfill(sep) << setw(numWidth) << setfill(sep); //cout << i.getNum(); cout << setw(58 - numWidth) << setfill(sep) << "|\n";
+cout << "|                                                              |\n";
+cout << "|                                                              |\n";
+cout << "|                                                              |\n";
+cout << "|                                                              |\n";
+cout << "|                                                              |\n";
+cout << " |" << setw(62) << setfill(sep) << "|\n";
+cout << "  ____________________________________________________________  \n";
+}*/
 
 /*bool Ticket::operator==(const Ticket &t) {
     return (t.seat == seat && t.price == price && t.num == num && t.owner == owner);

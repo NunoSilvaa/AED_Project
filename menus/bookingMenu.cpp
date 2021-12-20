@@ -12,7 +12,7 @@ void BookingMenu::runBookingMenu(Passenger client, Flight flight) {
     int passportNum;
     srand(time(NULL));
     int numtickets, totalPrice, ccnum, secnum;
-    bool checkinLug /*= false*/;
+    bool checkinLug;
     char c;
 
     cout << "Insert your passport number: ";
@@ -33,7 +33,6 @@ void BookingMenu::runBookingMenu(Passenger client, Flight flight) {
     cin >> numtickets;
     totalPrice = flight.getBprice() * numtickets;
     cout << "Total Amount: " << totalPrice << "$\n";
-    //ticket.display();
     cout << "Insert you credit card number: ";
     cin >> ccnum;
     cout << "Insert your security number: ";

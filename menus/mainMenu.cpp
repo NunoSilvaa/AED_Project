@@ -9,6 +9,8 @@
 #include "mainMenu.h"
 #include "clientMenu.h"
 #include "../src/plane.h"
+#include "bossMenu.h"
+#include "../src/luggage.h"
 
 using namespace std;
 
@@ -16,17 +18,15 @@ using namespace std;
 mainMenu::mainMenu() {};
 
 void mainMenu::runMenu() {
-    //Flight flight;
+    Luggage luggage;
     ClientMenu m;
+    BossMenu bm;
     char a;
-    //time_t timer;
-    //flight.readFlight();
     while (true) {
         system(CLEAR);
         cout << setw(40) <<"-------------\n"
              << setw(40) <<"-Our Company-\n"
              << setw(40) <<"-------------\n";
-       // cout << time(&timer);
         cout << "\n   [1] Staff"
              << "\n   [2] Client"
              << "\n   [0] Exit\n";
@@ -41,8 +41,9 @@ void mainMenu::runMenu() {
                 cout << "Client Area\n";
                 m.runClientMenu();
                 break;
+            case '-':
+                bm.runBossMenu();
             default: cout << "Invalid Operation\n"; break;
-            //int a = getchar();
         }
     }
 }

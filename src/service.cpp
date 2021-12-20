@@ -2,10 +2,9 @@
 // Created by croipi on 16/12/21.
 //
 
-#include "service.h"
-#include <iostream>
 #include "../utilities/date.h"
 #include <string>
+
 
 Service::Service (string newtype, Worker neww, Date adate) {
     this -> type = newtype;
@@ -44,6 +43,7 @@ void Service::addToQ(Service s) {
 void Service::removeFromQ(Service s) {
     this -> fila.pop();
 }
+
 void Service::workDone(Service s) {
     s.setF(1);
     s.addToQ(s);

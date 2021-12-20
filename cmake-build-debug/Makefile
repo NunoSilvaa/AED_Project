@@ -176,6 +176,30 @@ menus/bookingMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bookingMenu.cpp.s
 .PHONY : menus/bookingMenu.cpp.s
 
+menus/bossMenu.obj: menus/bossMenu.cpp.obj
+.PHONY : menus/bossMenu.obj
+
+# target to build an object file
+menus/bossMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bossMenu.cpp.obj
+.PHONY : menus/bossMenu.cpp.obj
+
+menus/bossMenu.i: menus/bossMenu.cpp.i
+.PHONY : menus/bossMenu.i
+
+# target to preprocess a source file
+menus/bossMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bossMenu.cpp.i
+.PHONY : menus/bossMenu.cpp.i
+
+menus/bossMenu.s: menus/bossMenu.cpp.s
+.PHONY : menus/bossMenu.s
+
+# target to generate assembly for a file
+menus/bossMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\airport.dir\build.make CMakeFiles/airport.dir/menus/bossMenu.cpp.s
+.PHONY : menus/bossMenu.cpp.s
+
 menus/clientMenu.obj: menus/clientMenu.cpp.obj
 .PHONY : menus/clientMenu.obj
 
@@ -455,6 +479,9 @@ help:
 	@echo ... menus/bookingMenu.obj
 	@echo ... menus/bookingMenu.i
 	@echo ... menus/bookingMenu.s
+	@echo ... menus/bossMenu.obj
+	@echo ... menus/bossMenu.i
+	@echo ... menus/bossMenu.s
 	@echo ... menus/clientMenu.obj
 	@echo ... menus/clientMenu.i
 	@echo ... menus/clientMenu.s
