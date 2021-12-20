@@ -6,15 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/flight.h
-string
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/luggage.cpp
+fstream
 -
+iostream
+-
+luggage.h
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/luggage.h
+algorithm
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/algorithm
+
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/luggage.h
+passenger.h
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/passenger.h
 plane.h
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/plane.h
-../utilities/date.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/utilities/date.h
-../utilities/time.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/utilities/time.h
+queue
+-
+stack
+-
 
 C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/passenger.h
 string
@@ -26,35 +36,5 @@ string
 vector
 -
 list
--
-
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/ticket.cpp
-ticket.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/ticket.h
-algorithm
--
-ctime
--
-fstream
--
-iomanip
--
-
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/ticket.h
-passenger.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/passenger.h
-flight.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/flight.h
-plane.h
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/src/plane.h
-list
--
-
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/utilities/date.h
-iostream
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/utilities/iostream
-
-C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/utilities/time.h
-iostream
 -
 

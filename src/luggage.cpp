@@ -41,7 +41,7 @@ void Luggage::setLp(string lp) {
 }
 
 void Luggage::readLuggage() {
-    ifstream fin("../Data/luggage.txt");
+    ifstream fin("../Data/luggages.txt");
     string fName, lName, lp;
     Passenger client;
     Plane plane;
@@ -57,7 +57,7 @@ void Luggage::readLuggage() {
 void Luggage::addToTreadmill(Luggage luggage) {
     treadmill.push_back(luggage);
 
-    fstream outf("../Data/luggage.txt", fstream::app);
+    fstream outf("../Data/luggages.txt", fstream::app);
     outf << "\n" << fName << " "
          << lName << " "
          << lp;
@@ -76,7 +76,7 @@ void Luggage::addToCar( string lp) {
         stack<Luggage> pile;
         for (int i = 0; i < 5; i++) {
             it = find_if(treadmill.begin(), treadmill.end(), [&](const Luggage& l){ return l.getLp() == lp;});
-            cout << it->getLname();
+            //cout << it->getLname();
             pile.push(*it);
             treadmill.erase(it++);
 
