@@ -68,7 +68,10 @@ void Ticket::addTicket(Ticket ticket) {
     outf << "\n" <<ticket.getNum() << " "
          << ticket.getSeat() << " "
          << ticket.getOwner().getFname() << " "
-         << ticket.getOwner().getLname() << " ";
+         << ticket.getOwner().getLname() << " "
+         << ticket.getFlight().getNumfly() << " "
+         << ticket.getFlight().getOrigin() << " "
+         << ticket.getFlight().getDestination() << " ";
     if(ticket.getOwner().getCheckinBag())
         outf << 1 << " ";
     else
@@ -99,14 +102,14 @@ void Ticket::addTicket(Ticket ticket) {
 }*/
 void Ticket::readTickets() {
     ifstream fin("../Data/tickets.txt");
-    int num, passportNum;
-    string fName, lName, seat;
+    int num, passportNum, numfly;
+    string fName, lName, seat, origin, destination;
     bool bagBool;
-    Flight flight;
 
-    while(fin >> num >> seat >> fName >> lName >> bagBool >> passportNum){
+    while(fin >> num >> seat >> fName >> lName >> numfly >> origin >> destination >> bagBool >> passportNum){
         Passenger owner(fName, lName, bagBool, passportNum);
-        Ticket ticket(num, seat, owner, flight);
+        Flight flight1(numfly, origin, destination);
+        Ticket ticket(num, seat, owner, flight1);
         tickets.push_back(ticket);
     }
 }

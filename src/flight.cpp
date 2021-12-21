@@ -13,6 +13,11 @@
 using namespace std;
 
 Flight::Flight() {};
+Flight::Flight(int numfly, string origin, string destination) {
+    this->numfly = numfly;
+    this->origin = origin;
+    this->destination = destination;
+}
 Flight::Flight(int anumfly, Date adate, Time adur, string origin, string adestination, int bprice, Plane plane){
     this -> numfly = anumfly;
     this -> date = adate;
