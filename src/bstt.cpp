@@ -84,7 +84,7 @@ Bstt::Node* Bstt::getNodep(Stcp key, Node* p) {
  void Bst::getApartirdas(Stcp key) { // return um Stcp pela hora, ex: Autocarros apartir das 18h
      Node* p = getNode(key);
      if(p != NULL) {
-         cout << "Starting at" << p->key.getHour <<endl;
+         cout << "Starting at" << p->key.getHour() <<endl;
          /*p -> left == NULL ?
          cout<<"Left child = NULL1n":
          cout <<"left child = " << p->left->key<<endl;
