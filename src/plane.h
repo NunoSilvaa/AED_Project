@@ -68,7 +68,6 @@ public:
     * @param plane the plane to be removed
     */
     void removePlane(Plane plane);
-    //void readPlanes();
 
     /**
     * Function to generate a plane's license plate

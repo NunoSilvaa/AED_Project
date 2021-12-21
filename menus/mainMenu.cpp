@@ -24,9 +24,9 @@ void mainMenu::runMenu() {
     char a;
     while (true) {
         system(CLEAR);
-        cout << setw(40) <<"-------------\n"
-             << setw(40) <<"-Our Company-\n"
-             << setw(40) <<"-------------\n";
+        cout << setw(50) <<"------\n"
+             << setw(50) <<"-TAPE-\n"
+             << setw(50) <<"------\n";
         cout << "\n   [1] Staff"
              << "\n   [2] Client"
              << "\n   [0] Exit\n";

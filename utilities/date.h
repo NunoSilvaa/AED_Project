@@ -32,6 +32,7 @@ public:
      * @return the day of date
      */
     int getDay() const;
+
     /**---Getters-and-Setters----*/
     /**
      * setter for the hour
@@ -47,22 +48,22 @@ public:
      * setter for the month
      * @param month is the new month
     */
-void setMonth(int month);
-/**
- * getter for the year of the date
- * @return the year of the date
- */
-int getYear() const;
-/**
- * setter for the year
- * @param year is the new year
- */
-void setYear(int year);
-/**
- * function to print the date
- * @param out is printed
- */
-void output(ostream &out) const;
+    void setMonth(int month);
+    /**
+    * getter for the year of the date
+    * @return the year of the date
+    */
+    int getYear() const;
+    /**
+    * setter for the year
+    * @param year is the new year
+    */
+    void setYear(int year);
+    /**
+    * function to print the date
+    * @param out is printed
+    */
+    void output(ostream &out) const;
 };
 
 

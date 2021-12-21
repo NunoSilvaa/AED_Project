@@ -13,7 +13,6 @@ ClientMenu::ClientMenu() {};
 
 void ClientMenu::runClientMenu() {
     FlightsMenu fm;
-    BookingMenu bm;
     ReservationMenu rm;
     Ticket ticket;
     string fname, lname;

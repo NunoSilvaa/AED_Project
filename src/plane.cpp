@@ -70,21 +70,6 @@ void Plane::removePlane(Plane plane) {
     rename("../Data/temp.txt", "../Data/planes.txt");
 }
 
-void Plane::readPlanes() {
-    ifstream fin("../Data/tickets.txt");
-    int cap;
-    string lp;
-
-    while (fin >> lp >> cap) {
-        Plane plane(lp, cap);
-        planes.push_back(plane);
-    }
-}
-
-/*Plane Plane::findPlane(string lp){
-    return *(find(planes.begin(), planes.end(), lp));
-}*/
-
 string Plane::generateLicensePlate() {
     static const char letters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string lp /*= "AA-AAA"*/;
