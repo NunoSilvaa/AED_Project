@@ -8,8 +8,16 @@
 
 class BossMenu {
 public:
+    /**-----Constructors-----*/
+    /**
+     * Default constructor for the BossMenu class
+     */
     BossMenu();
 
+    /**-----Functions-----*/
+    /**
+     * Function that runs the boss menu given
+     */
     void runBossMenu();
 
 };

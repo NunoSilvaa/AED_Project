@@ -10,8 +10,16 @@
 
 class mainMenu {
 public:
+    /**-----Constructors-----*/
+    /**
+     * Default constructor for the mainMenu class
+     */
     mainMenu();
 
+    /**-----Functions-----*/
+    /**
+    * Function that runs the main menu
+    */
     void runMenu();
 
 };

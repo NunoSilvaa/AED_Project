@@ -11,8 +11,17 @@
 
 class ReservationMenu {
 public:
+    /**-----Constructors-----*/
+    /**
+     * Default constructor for the ReservationMenu class
+     */
     ReservationMenu();
 
+    /**-----Functions-----*/
+    /**
+     * Function that runs the reservations menu given a client
+     * @param client the passenger that has a reservation
+     */
     void runReservationMenu(Passenger client);
 
 };

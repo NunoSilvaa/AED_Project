@@ -15,8 +15,17 @@ private:
     Flight flight;
 
 public:
+    /**-----Constructors-----*/
+    /**
+     * Default constructor for the FlightsMenu class
+     */
     FlightsMenu();
 
+    /**-----Functions-----*/
+    /**
+     * Function that runs the flights menu given a client
+     * @param client the passenger that wants to book a flight
+     */
     void runFlightMenu(Passenger client);
 
 };

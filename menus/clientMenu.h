@@ -13,8 +13,16 @@ private:
     Passenger client;
 
 public:
+    /**-----Constructors-----*/
+    /**
+     * Default constructor for the ClientMenu class
+     */
     ClientMenu();
 
+    /**-----Functions-----*/
+    /**
+     * Function that runs the clients menu
+     */
     void runClientMenu();
 
 };
