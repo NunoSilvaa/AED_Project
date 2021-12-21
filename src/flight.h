@@ -25,6 +25,7 @@ private:
     vector<Flight> flights;
 public:
     Flight();
+    Flight(int numfly);
     Flight(int numfly, string origin, string destination);
     Flight(int anumfly, Date adate, Time adur, string ori, string dest, int bprice, Plane plane);
 

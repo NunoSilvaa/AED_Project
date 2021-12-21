@@ -15,7 +15,6 @@ private:
     string lname;
     bool checkinBag;
     int passportNum;
-    //Ticket ticket;
 public:
     Passenger();
     Passenger(string fname, string lname, bool checkinBag, int passportNum);
@@ -32,9 +31,6 @@ public:
 
     bool operator==(const Passenger& p);
 
-    //void displayPassenger();
-
-    //friend class clientMenu;
 };
 
 #endif //AIRPORT_PASSENGER_H

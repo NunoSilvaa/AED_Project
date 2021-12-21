@@ -12,6 +12,10 @@ using namespace std;
 
 Ticket::Ticket() {}
 
+Ticket::Ticket(int num) {
+    this->num = num;
+}
+
 Ticket::Ticket(int num, string seat, Passenger owner, Flight flight) {
     this->num = num;
     this->seat = seat;
@@ -22,10 +26,6 @@ Ticket::Ticket(int num, string seat, Passenger owner, Flight flight) {
 int Ticket::getNum() const {
     return num;
 }
-
-/*int Ticket::getPrice() const {
-    return price;
-}*/
 
 string Ticket::getSeat() const {
     return seat;
@@ -43,10 +43,6 @@ void Ticket::setNum(int num) {
     this->num = num;
 }
 
-/*void Ticket::setPrice(int price) {
-    this->price = price;
-}*/
-
 void Ticket::setSeat(string seat) {
     this->seat = seat;
 }
@@ -59,8 +55,6 @@ void Ticket::setFlight(Flight flight) {
     this->flight = flight;
 }
 
-
-// add, remove and search
 void Ticket::addTicket(Ticket ticket) {
     tickets.push_back(ticket);
 
@@ -80,26 +74,34 @@ void Ticket::addTicket(Ticket ticket) {
     outf.close();
 }
 
-/*void Ticket::removeTicket(Ticket ticket) {
-    tickets.remove(ticket);
-}*/
-
-/*Ticket Ticket::findTicket(Passenger client) {
-    list<Ticket>::iterator it;
-    for(auto& i: tickets){
-        if(i.owner == owner){
-            return i;
+void Ticket::removeTicket(Ticket ticket) {
+    for(auto i = tickets.begin(); i != tickets.end(); i++){
+        if(i->getNum() == ticket.num) {
+            tickets.erase(i);
+            i--;
         }
     }
-}*/
-    /*for(it = tickets.begin(); it != tickets.end(); it++){
-        if(it->owner.getPassportNum() == client.getPassportNum()){
-            return *it;
-        }
-    }/*
-    //add exception later
-    //return *it;
-}*/
+
+    string line;
+
+    ifstream fin;
+    fin.open("../Data/tickets.txt");
+    ofstream temp;
+    temp.open("../Data/temp.txt");
+
+    while (getline(fin, line))
+    {
+        string id(line.begin(), line.begin() + line.find(" "));
+        if (id != to_string(ticket.num))
+            temp << line << endl;
+    }
+
+    temp.close();
+    fin.close();
+    remove("../Data/tickets.txt");
+    rename("../Data/temp.txt", "../Data/tickets.txt");
+}
+
 void Ticket::readTickets() {
     ifstream fin("../Data/tickets.txt");
     int num, passportNum, numfly;
@@ -128,9 +130,14 @@ int Ticket::countFlightTickets(int numfly) {
 int Ticket::generateTicketNum() {
     int num;
 
-    num = rand() % 999999 + 000000;
+    num = rand() % 999999;
 
+    for(auto i: tickets){
+        if(i.getNum() == num)
+            return generateTicketNum();
+    }
     return num;
+
 }
 
 string Ticket::generateSeatNum(Plane plane) {
@@ -138,10 +145,16 @@ string Ticket::generateSeatNum(Plane plane) {
     char ch;
     string seat;
 
-    num = rand() % (plane.getCapapcity()/6) + 00;
+    num = rand() % (plane.getCapapcity()/6);
     ch = 'A' + rand() % 6;
 
-    seat = ch + to_string(num);
+    seat = to_string(num) + ch;
+
+    for(auto i: tickets){
+        if(i.getSeat() == seat)
+            return generateSeatNum(plane);
+    }
+
     return seat;
 }
 
@@ -152,11 +165,10 @@ void Ticket::display(Passenger client) {
         cin >> passportNum;
         client.setPassportNum(passportNum);
     }
-
+    cout << "\nYour ticket info:\n\n";
     for(auto i: tickets) {
         if(i.getOwner() == client){
-            cout << "\nYour ticket info:\n\n";
-            cout << "Ticket owner: " << i.owner.getFname() << " " << i.owner.getLname() << "\n"
+            cout << "\nTicket owner: " << i.owner.getFname() << " " << i.owner.getLname() << "\n"
                  << "Ticket number: " << i.num << "\n"
                  << "From: " << i.flight.getOrigin() << " " << "To: " << i.flight.getDestination() << "\n"
                  << "Flight number: " << i.flight.getNumfly() << "\n"
@@ -165,22 +177,3 @@ void Ticket::display(Passenger client) {
     }
 }
 
-/*cout << "  ____________________________________________________________  \n";
-cout << " |" << setw(62) << setfill(sep) << "|\n";
-cout << left << "|" << setw(64) << setfill(sep) << "|\n";
-cout << "|                                                              |\n";
-cout << "|" << setw(i.owner.getFname().size() + 10)  << i.owner.getFname() << " " << setw(i.owner.getLname().size()) << i.owner.getLname(); //<< setw(54 - nameWidth) << "|\n";
-cout << "|                                                              |\n";
-cout << "|" << setw(10) << setfill(sep) << setw(numWidth) << setfill(sep); //cout << i.getNum(); cout << setw(58 - numWidth) << setfill(sep) << "|\n";
-cout << "|                                                              |\n";
-cout << "|                                                              |\n";
-cout << "|                                                              |\n";
-cout << "|                                                              |\n";
-cout << "|                                                              |\n";
-cout << " |" << setw(62) << setfill(sep) << "|\n";
-cout << "  ____________________________________________________________  \n";
-}*/
-
-/*bool Ticket::operator==(const Ticket &t) {
-    return (t.seat == seat && t.price == price && t.num == num && t.owner == owner);
-}*/

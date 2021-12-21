@@ -14,7 +14,6 @@ using namespace std;
 
 class Ticket{
 private:
-    int price;
     int num;
     string seat;
     Passenger owner;
@@ -22,6 +21,7 @@ private:
     list<Ticket> tickets;
 public:
     Ticket();
+    Ticket(int num);
     Ticket(int num, string seat, Passenger owner, Flight flight);
 
     int getNum() const;
@@ -30,14 +30,12 @@ public:
     Flight getFlight() const;
 
     void setNum(int num);
-    //void setPrice(int price);
     void setSeat(string seat);
     void setOwner(Passenger owner);
     void setFlight(Flight flight);
 
     void addTicket(Ticket ticket);
     void removeTicket(Ticket ticket);
-    Ticket findTicket(Passenger client);
     int countFlightTickets(int numfly);
 
     int generateTicketNum();
@@ -45,7 +43,6 @@ public:
     void readTickets();
     void display(Passenger client);
 
-    //bool operator==(const Ticket& t);
 };
 
 #endif //AIRPORT_TICKET_H

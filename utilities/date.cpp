@@ -46,10 +46,8 @@ void Date::setYear(int year) {
 
 void Date::output(ostream &out) const {
     string dayDisplay = std::to_string(this->day);
-    //if (this->day < 9) dayDisplay = "0" + std::to_string(this->day);
 
     string monthDisplay = std::to_string(this->month);
-    //if (this->month < 9) monthDisplay = "0" + std::to_string(this->month);
 
     string yearDisplay = to_string(this->year);
 

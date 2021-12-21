@@ -50,6 +50,3 @@ void Passenger::setPassportNum(int passportNum) {
 bool Passenger::operator==(const Passenger &p) {
     return (p.fname == fname && p.lname == lname && p.passportNum == passportNum);
 }
-/*void Passenger::displayPassenger() {
-
-}*/

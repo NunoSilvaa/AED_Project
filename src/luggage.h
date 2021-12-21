@@ -33,12 +33,9 @@ public:
     void setLp(string lp);
 
     void readLuggage();
-    void addToTreadmill(Luggage luggage);
+    void addToTreadmill(Luggage luggage, int ticketsBought);
     void addToCar(string lp);
     int numCarsUsed();
-    void print_vect();
-
-    //bool operator==(const string& lp1);
 };
 
 #endif //AIRPORT_LUGGAGE_H

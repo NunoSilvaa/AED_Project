@@ -47,50 +47,45 @@ void Luggage::readLuggage() {
     Plane plane;
 
     while(fin >> fName >> lName >> lp){
-        //Passenger client(fName, lName);
-        //Plane plane(lp);
         Luggage luggage1(fName, lName, lp);
         treadmill.push_back(luggage1);
     }
 }
 
-void Luggage::addToTreadmill(Luggage luggage) {
+void Luggage::addToTreadmill(Luggage luggage, int ticketsBought) {
     treadmill.push_back(luggage);
 
     fstream outf("../Data/luggages.txt", fstream::app);
-    outf << "\n" << fName << " "
-         << lName << " "
-         << lp;
+    for(int i = 0; i < ticketsBought; i++) {
+        outf << "\n" << luggage.fName << " "
+             << luggage.lName << " "
+             << luggage.lp;
+    }
     outf.close();
-}
-
-void Luggage::print_vect() {
-    cout << fName << " " << lName << " " << lp;
 }
 
 void Luggage::addToCar( string lp) {
     list<Luggage>::iterator it;
-    bool found = (find_if(treadmill.begin(), treadmill.end(), [&](const Luggage &l) { return l.getLp() == lp; }) !=
-                  treadmill.end());
-    while(found) {
-        stack<Luggage> pile;
+    stack<Luggage> pile;
+    bool found = false;
+    while(true) {
         for (int i = 0; i < 5; i++) {
             it = find_if(treadmill.begin(), treadmill.end(), [&](const Luggage& l){ return l.getLp() == lp;});
-            //cout << it->getLname();
-            pile.push(*it);
-            treadmill.erase(it++);
-
+            found = it != treadmill.end();
+            if(found) {
+                pile.push(*it);
+                treadmill.erase(it++);
+            }
+            else
+                break;
         }
         luggageCar.push_back(pile);
         pile = stack<Luggage>();
+        if(!found) break;
     }
 }
 
 int Luggage::numCarsUsed() {
     return luggageCar.size() % 5;
 }
-
-/*bool operator==(const string& lp1){
-    return(lp == lp1);
-}*/
 

@@ -20,7 +20,6 @@ private:
 public:
     Plane();
     Plane(string lp, int cap);
-    //void addFlightplan(vector<Flight>& newFlightplan);
     //Getters
     string getLicensePlate();
     int getCapapcity();
@@ -35,7 +34,6 @@ public:
     string generateLicensePlate();
 
     bool operator==(const Plane& p);
-    //bool operator()(const Plane& plane, const string& lp) const;
 };
 #endif //UNTITLED3_PLANE_H
 

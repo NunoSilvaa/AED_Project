@@ -17,17 +17,6 @@ Plane::Plane(string lp, int cap) {
     this->licensePlate = lp;
     this->capacity = cap;
 }
-//Vector do voo
-/*void addFlightplan(vector<Flight>& newFlightplan){
-    int numf, date, dur;
-    string ori, dest;
-    Plane plane();
-    for(int i=0;i<5;i++){
-        //cout?
-        Flight newFlight(numf, date, dur, ori, dest, plane);
-        newFlightplan.push_back(newFlight);
-    }
-}*/
 //Getters
 string Plane::getLicensePlate() {
     return licensePlate;
@@ -60,6 +49,25 @@ void Plane::removePlane(Plane plane) {
             i--;
         }
     }
+
+    string line;
+
+    ifstream fin;
+    fin.open("../Data/planes.txt");
+    ofstream temp;
+    temp.open("../Data/temp.txt");
+
+    while (getline(fin, line))
+    {
+        string id(line.begin(), line.begin() + line.find(" "));
+        if (id != plane.licensePlate)
+            temp << line << endl;
+    }
+
+    temp.close();
+    fin.close();
+    remove("../Data/planes.txt");
+    rename("../Data/temp.txt", "../Data/planes.txt");
 }
 
 void Plane::readPlanes() {

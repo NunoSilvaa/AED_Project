@@ -84,14 +84,14 @@ Bstt::Node* Bstt::getNodep(Stcp key, Node* p) {
  void Bst::getApartirdas(Stcp key) { // return um Stcp pela hora, ex: Autocarros apartir das 18h
      Node* p = getNode(key);
      if(p != NULL) {
-         cout << "Apartir das" << p->key.getHour <<endl;
+         cout << "Starting at" << p->key.getHour <<endl;
          /*p -> left == NULL ?
          cout<<"Left child = NULL1n":
          cout <<"left child = " << p->left->key<<endl;
 */
          p -> right == NULL ?
-         cout << "Nao existem transportes a esta hora":
-         cout << "Há" << p->right->key.getType() << "transportes";
+         cout << "There are no transports at this time":
+         cout << "There is" << p->right->key.getType() << "transports";
 
      }
      //else cout << key << "is not in the tree\n"
@@ -100,14 +100,14 @@ Bstt::Node* Bstt::getNodep(Stcp key, Node* p) {
  void Bstt::getMaisperto(Stcp key) {
      Node* p = getNode(key);
      if(p != NULL) {
-         cout << "Os Tranportes mais proximos num raio de" << p->key.getDist() << "sao: " <<endl;
+         cout << "The closest transports ina radius of" << p->key.getDist() << "are: " <<endl;
          /*p -> left == NULL ?
          cout<<"Left child = NULL1n":
          cout <<"left child = " << p->left->key<<endl;
 */
          p -> right == NULL ?
-         cout << "Nao existem transportes a esta distancia":
-         cout << "Há" << p->right->key.getType() << "transportes";
+         cout << "There are no transports available in this area":
+         cout << "There is" << p->right->key.getType() << "Transports";
 
      }
      //else cout << key << "is not in the tree\n"

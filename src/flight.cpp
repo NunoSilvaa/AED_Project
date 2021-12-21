@@ -12,7 +12,12 @@
 
 using namespace std;
 
-Flight::Flight() {};
+Flight::Flight() {}
+
+Flight::Flight(int numfly){
+    this->numfly = numfly;
+}
+
 Flight::Flight(int numfly, string origin, string destination) {
     this->numfly = numfly;
     this->origin = origin;
@@ -88,11 +93,30 @@ void Flight::addFlight(Flight flight) {
 
 void Flight::removeFlight(Flight flight) {
     for(auto i = flights.begin(); i != flights.end(); i++){
-        if(*i == flight) {
+        if(i->numfly == flight.numfly) {
             flights.erase(i);
             i--;
         }
     }
+
+    string line;
+
+    ifstream fin;
+    fin.open("../Data/flights.txt");
+    ofstream temp;
+    temp.open("../Data/temp.txt");
+
+    while (getline(fin, line))
+    {
+        string id(line.begin(), line.begin() + line.find(" "));
+        if (id != to_string(flight.numfly))
+            temp << line << endl;
+    }
+
+    temp.close();
+    fin.close();
+    remove("../Data/flights.txt");
+    rename("../Data/temp.txt", "../Data/flights.txt");
 }
 
 void Flight::readFlight() {
@@ -123,8 +147,9 @@ void Flight::display() {
          << "Price" << setw(18)
          << "Flight Number\n\n";
     for (auto x: flights) {
-        cout << x.origin << " -------> "
-             << x.destination << setw(10);
+        cout << setw(5) << x.origin << setw(5) << " -------> "
+             << setw(5) << x.destination;
+        cout << setw(10);
         x.duration.output(cout);
         cout << setw(10);
         x.date.output(cout);

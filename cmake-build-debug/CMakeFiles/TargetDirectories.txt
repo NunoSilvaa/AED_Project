@@ -1,3 +1,3 @@
-/home/croipi/CLionProjects/AED_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/croipi/CLionProjects/AED_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/croipi/CLionProjects/AED_Project/cmake-build-debug/CMakeFiles/airport.dir
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/airport.dir
+C:/Users/nmls1/Desktop/airport/AED_Project/AED_Project/AED_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
